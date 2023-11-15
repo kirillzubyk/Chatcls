@@ -1,0 +1,87 @@
+<!-- index.html -->
+<!-- index.html -->
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Chat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="chat-container">
+    <div id="chat-messages"></div>
+    <div id="participants-container">
+
+    <div id="input-container">
+        <input type="text" id="name-input" placeholder="Введите ваше имя">
+
+
+
+        <input type="text" id="message-input" placeholder="Напишите свое уведомление...">
+        <button id="send-button">Отправить сообщение</button>
+
+
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+<script src="script.js"></script>
+
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+
+    #chat-container {
+        max-width: 700px;
+        margin: 20px auto;
+        background-color: #fff;
+        border-radius: 9px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #chat-messages {
+        padding: 10px;
+        overflow-y: scroll;
+        height: 300px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    #input-container {
+        display: flex;
+        padding: 10px;
+    }
+
+    #message-input {
+        flex: 1;
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        margin-right: 10px;
+    }
+
+    #send-button {
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        padding: 8px 12px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .message {
+        margin-bottom: 11px;
+    }
+
+    #chat-messages-container {
+        border-bottom: 1px solid #ddd;
+    }
+</style>
+</body>
+</html>
